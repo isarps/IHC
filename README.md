@@ -1,5 +1,4 @@
-# IHC
-# 3º semestre A de ADS
+# IHC - 3º semestre A de ADS
 
 Professor da Disciplina: Giuliano Bertoti 
 
