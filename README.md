@@ -6,6 +6,7 @@ Equipe:
  - Ângelo Lima
  - Larissa Miho
  - Isabella Segundo
+ - Natália Neves
  - Tabatha Fróes
 
 
