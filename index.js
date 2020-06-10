@@ -13,7 +13,11 @@ const botao = document.getElementById("botaoProximo");
 const furadeira = document.getElementById("furadeira");
 
 function clickBotao(){
-  furadeira.object3D.rotation.y += 1;
+  //furadeira.object3D.rotation.y += 1;
+  furadeira.object3D.position.x += 1;
+  if(furadeira.object3D.position.x == 0){
+    furadeira.object3D.position.x -= 2;
+  }
 }
 
 botao.addEventListener("click", clickBotao);
