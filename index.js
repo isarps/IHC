@@ -11,9 +11,11 @@ window.onload = () => {
 
 const botao = document.getElementById("botaoProximo");
 const furadeira = document.getElementById("furadeira");
+var certo = 0;
 
 function clickBotao(){
   //furadeira.object3D.rotation.y += 1;
+  certo += 1;
   furadeira.object3D.position.x += 1;
   if(furadeira.object3D.position.x == 0){
     furadeira.object3D.position.x -= 2;
@@ -21,6 +23,54 @@ function clickBotao(){
 }
 
 botao.addEventListener("click", clickBotao);
+
+
+
+
+
+
+
+
+
+//muda a cor do bloco
+
+document.querySelector("#botaoCheck").addEventListener("click", (e)=>{ 
+  
+  var el = document.querySelector("#cube");
+  if(certo === 1){
+    el.setAttribute('material', 'color', 'red');
+  }
+
+
+ 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //const porta = document.querySelector("porta");
 //const seta1 = document.querySelector("setaDireita");

@@ -36,10 +36,15 @@
     <a-gltf-model static-body id ="hangar" src="https://raw.githubusercontent.com/isarps/IHC/master/Objetos/hangar.gltf" rotation="0 90 0" scale="1 1 1" position="-2.5 0 8" visible="true"  > </a-gltf-model>
     
     <a-entity  light="type: ambient; intensity: 0.8;"  visible="True" position="0 0 0"  ></a-entity>
-    <a-box  visible="true" color="#696969" position="0 0 2"  rotation="0 0 0" scale="11 1 22" > </a-box>
+    <a-box  visible="true" color="#696969" position="0 0 2"  rotation="0 0 0" scale="11 1 22"   > </a-box>
+    
+    <a-box id="cube" visible="true" color="#006400" position="1 1 -5"  rotation="0 0 0" scale="10 4 0.5"> </a-box>
+    <a-box id="blocoQualquer" visible="true" color="#8B4513" position="1 1 -2"  rotation="0 0 0" scale="0.5 0.5 0.5"> </a-box>
+
+
 
     <!--<a-sphere color="#00ffff" position = "1 2 1" rotation="0 0 0" scale="1 1 1" visible="true"></a-sphere> -->
-    
+<!-- botao da furadeira-->
     <a-gltf-model id ="botaoProximo"  
                   src="https://raw.githubusercontent.com/isarps/IHC/master/Objetos/botao.gltf" 
                   position = "-3.5 1.1 -4.1" 
@@ -50,6 +55,22 @@
     <a-gltf-model id ="botaoBase"      
                   src="https://raw.githubusercontent.com/isarps/IHC/master/Objetos/botaoBase.gltf" 
                   position = "-3.5 1.1 -4.1" 
+                  rotation="0 0 0"
+                  scale="1 1 1"
+                  visible="true"
+                  shadow="cast: true;">
+    </a-gltf-model>
+    <!-- botao do cubo-->
+    <a-gltf-model id ="botaoCheck"  
+                  src="https://raw.githubusercontent.com/isarps/IHC/master/Objetos/botao.gltf" 
+                  position = "-2.8 1.1 -4.1" 
+                  rotation="0 0 0" 
+                  scale="1 1 1a" 
+                  visible="true"> 
+    </a-gltf-model>
+    <a-gltf-model       
+                  src="https://raw.githubusercontent.com/isarps/IHC/master/Objetos/botaoBase.gltf" 
+                  position = "-2.8 1.1 -4.1" 
                   rotation="0 0 0"
                   scale="1 1 1"
                   visible="true"
@@ -91,3 +112,4 @@
   <script src="index.js"></script>
 </body>
 </html>
+
