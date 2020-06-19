@@ -11,39 +11,45 @@ window.onload = () => {
 
 const botao = document.getElementById("botaoProximo");
 const furadeira = document.getElementById("furadeira");
-var certo = 0;
+
+const botaoBorracha = document.getElementById("botaoBorracha");
+const borracha = document.getElementById("borracha");
+var cuboCor = document.querySelector("#cubeCor");
+var borrachaBool = 0;
 
 function clickBotao(){
-  //furadeira.object3D.rotation.y += 1;
-  certo += 1;
+  //furadeira.object3D.rotation.y += 1;w
   furadeira.object3D.position.x += 1;
+  
+
   if(furadeira.object3D.position.x == 0){
+    
     furadeira.object3D.position.x -= 2;
+    
+ 
   }
+  if(furadeira.object3D.position.x == -1 && borrachaBool == 0){
+    cuboCor.setAttribute('material', 'color', '#8B0000');
+  }else if(furadeira.object3D.position.x == -1){
+    cuboCor.setAttribute('material', 'color', '#006400');
+  }
+
+}
+
+
+
+function clickBotaoBorracha(){
+  
+  if(borrachaBool === 0){
+    borracha.object3D.position.z += 0.3;
+    borrachaBool = 1
+  }
+  
 }
 
 botao.addEventListener("click", clickBotao);
+botaoBorracha.addEventListener("click",clickBotaoBorracha);
 
-
-
-
-
-
-
-
-
-//muda a cor do bloco
-
-document.querySelector("#botaoCheck").addEventListener("click", (e)=>{ 
-  
-  var el = document.querySelector("#cube");
-  if(certo === 1){
-    el.setAttribute('material', 'color', 'red');
-  }
-
-
- 
-});
 
 
 
