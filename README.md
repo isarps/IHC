@@ -21,3 +21,9 @@ Tábatha e Natália prosseguiram com a criação e edição dos modelos GLTF par
 
 # 1ª Quinzena de Junho
 O grupo continuou a codificação, fazendo testes com modelos GLTF e inserindo iluminações e correções nos movimentos dos objetos.
+
+# 2ª Quinzena de Junho
+O grupo fez alguns ajustes e inseriu o comportamento de verificar se a peça está no local certo ou errado
+
+# 1º Quinzena de Julho
+O grupo finalizou os ajustes no projeto
